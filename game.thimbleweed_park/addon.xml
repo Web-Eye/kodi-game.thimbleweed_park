@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+    id="game.thimbleweed_park"
+    version="1.0.3+Beta"
+    name="Thimbleweed Park"
+    provider-name="WebEye">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <language>en</language>
+    <platform>linux</platform>
+    <license>GPL-3.0-only</license>
+    <website>https://github.com/Web-Eye/</website>
+    <source>https://github.com/Web-Eye/kodi-game.thimbleweed_park</source>
+    <summary lang="de">Dieses Plugin fügt einen Kodi-Launcher zum Starten von Thimbleweed Park hinzu.</summary>
+    <summary lang="en">This plugin adds a Kodi launcher for starting Thimbleweed Park.</summary>
+    <disclaimer lang="en_GB">Use at your own risk. Post suggestions, improvements or bug reports directly to GitHub.</disclaimer>
+    <disclaimer lang="de_DE">Benutzung auf eigene Gefahr. Anregungen, Verbesserungen oder Bugs bitte direkt über GitHub posten.</disclaimer>
+    <assets>
+      <icon>resources/assets/logo.png</icon>
+      <fanart>resources/assets/wallpaper.png</fanart>
+    </assets>
+    <news>
+    </news>
+  </extension>
+
+</addon>
