@@ -45,8 +45,10 @@ class KodiAddon(object):
 
     def run(self):
         xbmc.executebuiltin('InhibitScreensaver(true)')
-        # check_output(['bash', '/home/frank/Games/GOG Games/Thimbleweed Park/start.sh'])
-        call('/home/frank/Games/GOG Games/Thimbleweed Park/start.sh')
+        # check_output(['bash', '~/Games/GOG Games/Thimbleweed Park/start.sh'])
+
+        startup_path = self._addon.getSetting('startup_path')
+        call(os.path.join(startup_path, 'start.sh'))
 
         xbmc.executebuiltin('InhibitScreensaver(false)')
         xbmc.executebuiltin('ActivateWindow(home)')
