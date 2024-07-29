@@ -26,7 +26,7 @@ import os.path
 import stat
 import time
 
-from subprocess import check_output, CalledProcessError
+from subprocess import call, check_output, CalledProcessError
 
 
 def process_status(process_name):
@@ -45,8 +45,8 @@ class KodiAddon(object):
 
     def run(self):
         xbmc.executebuiltin('InhibitScreensaver(true)')
-        check_output(['bash', '/home/frank/Games/GOG Games/Thimbleweed Park/start.sh'])
-
+        # check_output(['bash', '/home/frank/Games/GOG Games/Thimbleweed Park/start.sh'])
+        call('/home/frank/Games/GOG Games/Thimbleweed Park/start.sh')
 
         xbmc.executebuiltin('InhibitScreensaver(false)')
         xbmc.executebuiltin('ActivateWindow(home)')
